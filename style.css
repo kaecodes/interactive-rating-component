@@ -33,6 +33,7 @@ body {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
+  display: none;
 }
 
 .star {
@@ -47,16 +48,6 @@ body {
 
 .rating {
   color: var(--medium-grey); 
-}
-
-.thanks-container {
-  width: 90%;
-  background-color: var(--dark-blue);
-  display: none;
-}
-
-.selected {
-  color: var(--orange); 
 }
 
 h2 {
@@ -100,5 +91,37 @@ p {
   outline: none; 
   color: var(--white); 
   cursor: pointer;
+}
+
+.thanks-container {
+  width: 90%;
+  background-color: var(--dark-blue);
+  padding: 2rem 1.5rem; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
+  position: fixed; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  border-radius: 0.5rem;
+}
+
+.selected {
+  color: var(--orange); 
+  background-color: var(--btn-blue);
+  padding: 0.6rem; 
+  border-radius: 1.5rem;
+}
+
+.text .thanks, .text .thanks-para {
+  text-align: center;
+}
+
+.text .thanks {
+  margin-top: 1.5rem; 
+  margin-bottom: 1rem;
 }
 
