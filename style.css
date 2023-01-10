@@ -7,6 +7,7 @@
   --medium-grey: hsl(216, 12%, 54%); 
   --dark-blue: hsl(213, 19%, 18%); 
   --very-dark-blue: hsl(216, 12%, 8%); 
+  --btn-blue: hsl(209, 22%, 24%); 
 }
 
 * {
@@ -37,7 +38,7 @@ body {
 .star {
   height: 2.5rem; 
   width: 2.5rem; 
-  border: 1px solid var(--dark-blue); 
+  background-color: var(--btn-blue);
   border-radius: 50%;
   display: flex;
   justify-content: center; 
