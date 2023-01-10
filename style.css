@@ -33,6 +33,7 @@ body {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
+  z-index: 1; 
 }
 
 .star {
@@ -117,7 +118,6 @@ p {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
-  display: none;
 }
 
 .selected {
