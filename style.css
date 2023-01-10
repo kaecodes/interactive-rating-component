@@ -33,7 +33,6 @@ body {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
-  display: none;
 }
 
 .star {
@@ -107,6 +106,7 @@ p {
   left: 50%; 
   transform: translate(-50%, -50%);
   border-radius: 0.5rem;
+  display: none;
 }
 
 .selected {
@@ -125,3 +125,14 @@ p {
   margin-bottom: 1rem;
 }
 
+/* Media Queries */
+
+@media (min-width: 1440px) {
+  .rating-container {
+    width: 20%; 
+  }
+
+  .thanks-container {
+    width: 20%;
+  }
+}
