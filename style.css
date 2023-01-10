@@ -80,6 +80,12 @@ p {
   align-items: center;
 }
 
+.number:hover {
+  background-color: var(--medium-grey);
+  color: var(--white); 
+  cursor: pointer;
+}
+
 .submit-btn {
   width: 100%;
   padding: 0.8rem; 
@@ -90,6 +96,11 @@ p {
   outline: none; 
   color: var(--white); 
   cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: var(--white);
+  color: var(--orange); 
 }
 
 .thanks-container {
