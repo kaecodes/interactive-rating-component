@@ -155,11 +155,11 @@ p {
 
 @media (min-width: 481px) {
   .rating-container {
-    width: 70%
+    width: 400px; 
   }
 
   .thanks-container {
-    width: 70%; 
+    width: 400px; 
   }
 }
 
