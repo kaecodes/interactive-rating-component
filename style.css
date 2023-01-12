@@ -81,6 +81,11 @@ p {
   align-items: center;
 }
 
+.number .active {
+  background-color: var(--orange);
+  color: var(--white); 
+}
+
 .number:hover {
   background-color: var(--medium-grey);
   color: var(--white); 
@@ -147,3 +152,14 @@ p {
     width: 20%;
   }
 }
+
+@media (min-width: 481px) {
+  .rating-container {
+    width: 70%
+  }
+
+  .thanks-container {
+    width: 70%; 
+  }
+}
+
