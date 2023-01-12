@@ -3,22 +3,26 @@ const ratingNum = document.querySelectorAll('.number');
 const submitBtn = document.querySelector('.submit-btn'); 
 const thanksCard = document.querySelector('.thanks-container'); 
 
-ratingNum.forEach((num) => {
-  num.addEventListener('click', () => {
-    num.style.backgroundColor = 'var(--orange)'; 
-    num.style.color = 'var(--white)'; 
+for (let i = 0; i < ratingNum.length; i++) {
+  ratingNum[i].onclick = function() {
+    ratingNum.forEach((num) => {
+      num.style.backgroundColor = ''; 
+      num.style.color = ''; 
+    })
+    this.style.backgroundColor = 'var(--orange)'; 
+    this.style.color = 'var(--white)'; 
 
-    const ratingValue = num.innerHTML; 
+    const ratingValue = this.innerHTML; 
 
     console.log(ratingValue); 
 
-    submitBtn.addEventListener('click', () => {
-      document.getElementById('selected-rating').innerHTML = ratingValue; 
-      ratingCard.style.zIndex = '0'; 
-      thanksCard.style.zIndex = '1'; 
-    })
+  submitBtn.addEventListener('click', () => {
+    document.getElementById('selected-rating').innerHTML = ratingValue; 
+    ratingCard.style.zIndex = '0'; 
+    thanksCard.style.zIndex = '1'; 
   })
-})
+  }
+}
 
 
  
